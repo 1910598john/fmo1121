@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/genres"
+        android:icon="@drawable/genres"
+        android:title="Home" />
+    <item
+        android:id="@+id/movies"
+        android:icon="@drawable/movies"
+        android:title="Movies" />
+    <item
+        android:id="@+id/series"
+        android:icon="@drawable/series"
+        android:title="Series" />
+    <item
+        android:id="@+id/watch"
+        android:icon="@drawable/watch"
+        android:title="Watch" />
+</menu>

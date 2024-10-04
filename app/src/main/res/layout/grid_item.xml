@@ -1,0 +1,72 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:layout_margin="5dp"
+    > <!-- No rounded corners -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <!-- FrameLayout to overlay title on image -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/black"
+            > <!-- Fixed height for image -->
+
+            <!-- Movie Poster -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:contentDescription="Movie Poster" />
+
+            <!-- Title Overlay -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/black"
+                android:padding="5dp"
+                android:minHeight="40dp"
+              >
+
+                <!-- Movie Title -->
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Title"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+
+                    android:maxLines="2" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Movie Year Below Image -->
+        <TextView
+            android:id="@+id/textViewYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="2024"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            android:gravity="center"
+       />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
